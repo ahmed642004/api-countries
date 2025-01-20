@@ -18,7 +18,7 @@ const SearchBar = ({ onSearch }) => {
           placeholder="Search For a Country..."
           value={searchTerm}
           onChange={handleChange}
-          className="w-full pl-14 p-3 dark:bg-[#2b3743] dark:border-0  border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full dark:text-white pl-14 p-3 dark:bg-[#2b3743] dark:border-0  border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
     </div>
