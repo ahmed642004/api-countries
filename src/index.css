@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+*{
+  transition: background-color 0.3s ease-in-out;
+}
+body {
+  @apply font-nunito;
+  background-color: hsl(0, 0%, 98%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+html.dark body {
+  background-color: hsl(207, 26%, 17%) !important;
+}
+
+p {
+  @apply dark:text-white;
+}
+
+.shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.icon-transition {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.icon-transition-active {
+  opacity: 1;
+}
